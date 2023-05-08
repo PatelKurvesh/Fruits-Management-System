@@ -1,0 +1,68 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:t="sap.ui.table" xmlns:f="sap.ui.layout.form" xmlns="sap.m"
+	controllerName="wl.wap.controller.View2" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="PAGE-2" showNavButton="true" navButtonPress="onPage2">
+		<content>
+			<ObjectHeader title="{name}" intro="{info}" icon="{path:'icon'}"></ObjectHeader>
+		</content>
+		<IconTabBar>
+			<items>
+				<IconTabFilter key="supplier" text="SUPPLIER">
+					<f:SimpleForm>
+						<Label text="Name"/>
+						<Text text="{name}"/>
+						<Label text="Company"/>
+						<Text text="{company}"/>
+						<Label text="Product Id"/>
+						<Text text="{productId}"/>
+					</f:SimpleForm>
+				</IconTabFilter>
+				<IconTabFilter key="detail" text="DETAIL">
+					<Table id="idTbl" items="{/fruits}">
+						<columns>
+							<Column>
+								<Label text="Product"/>
+							</Column>
+							<Column>
+								<Label text="Company"/>
+							</Column>
+							<Column>
+								<Label text="Manager"/>
+							</Column>
+							<Column>
+								<Label text="Id"/>
+							</Column>
+							<Column>
+								<Label text="Supplier"/>
+							</Column>
+							<Column>
+								<Label text="Income"/>
+							</Column>
+						</columns>
+						<ColumnListItem>
+							<cells>
+								<Text text="{name}"></Text>
+								<Text text="{company}"></Text>
+								<Text text="{manager}"></Text>
+								<Text text="{productId}"></Text>
+								<Text text="{supplier}"></Text>
+								<Text text="{annualIncome}"></Text>
+							</cells>
+						</ColumnListItem>
+					</Table>
+				</IconTabFilter>
+			</items>
+		</IconTabBar>
+		<Button text="Excell Download" press="onDownload"></Button>
+			<footer>
+						<Bar>
+							<contentLeft>
+								<Button icon="sap-icon://bar-code" press="onPress"></Button>
+							</contentLeft>
+							
+							<!--<contentRight>-->
+							<!--	<Button icon="sap-icon://stop" press="onStop"></Button>-->
+							<!--</contentRight>-->
+						</Bar>
+					</footer>
+	</Page>
+</mvc:View>

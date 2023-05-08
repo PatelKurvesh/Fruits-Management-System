@@ -1,0 +1,26 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="wl.wap.controller.View1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="PAGE-1">
+		<headerContent>
+			<Button icon="sap-icon://action" press="onPage1"></Button>
+		</headerContent>
+		<subHeader>
+			<Toolbar>
+				<Input id="search" liveChange="onLiveSearch"/>
+			</Toolbar>
+		</subHeader>
+		<content>
+			<List id="list" items="{/fruits}" mode="SingleSelectMaster" selectionChange="onSelectItem">
+				<StandardListItem type="Navigation" title="{name}" icon="{icon}" info="{price}"></StandardListItem>
+			</List>
+		</content>
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button id="saveBtn" text="Save" type="Accept" press="onSave"/>
+				<Button text="Cancel" type="Reject" />
+				<Button text="Edit" press="onEdit"/>
+			</OverflowToolbar> 
+		</footer>
+	</Page>
+</mvc:View>

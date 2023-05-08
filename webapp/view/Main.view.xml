@@ -1,0 +1,16 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="wl.wap.controller.Main"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page>
+		<content>
+			<VBox class="vbox" justifyContent="Center" alignContent="Center" fitContainer="true" alignItems="Center">
+				<items>
+					<Label class="label" text="UserName"></Label>
+					<Input class="input" id="user" placeholder="Enter your Username"></Input>
+					<Label class="label" text="Password"></Label>
+					<Input class="input" id="pwd" placeholder="Enter your Password" type="Password"></Input>
+					<Button class="btn" text="Login" press="onLogin"></Button>
+				</items>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

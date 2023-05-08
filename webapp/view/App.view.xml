@@ -1,0 +1,7 @@
+<mvc:View controllerName="wl.wap.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+
+		<App id="app">
+			
+		</App>
+
+</mvc:View>

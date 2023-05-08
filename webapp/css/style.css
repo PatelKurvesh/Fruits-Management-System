@@ -1,0 +1,12 @@
+/* Enter your custom styles here */
+.vbox{
+	
+	background: rgb(0,126,173);
+	background: linear-gradient(90deg, rgba(0,126,173,1) 0%, rgba(0,102,200,1) 40%, rgba(0,212,255,1) 100%);
+}
+
+.label{
+	color : black;
+	font-size:20px;
+}
+
